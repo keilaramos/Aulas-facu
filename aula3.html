@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 Programação Web II</title>
+</head>
+<body>
+    
+    <script>
+        alert("Olá mundo!");
+        document.write("Exemplo 1");
+        function funcao(){
+            var x;
+            var r = confirm("escolha um valor");
+            if(r == true){
+                x = " Resultado: <br> Você clicou no OK";
+             }else{
+                 x= "Resultado: <br> Você clicou no CANCELAR";
+             }
+             document.getElementById("demo").innerHTML = x;
+              }
+    
+    </script>
+    <h1>Deus é bom o tempo todo!!!Vamos testar js</h1>
+    <p>Clique no botão abaixo para mostrar a caixa de escolhas</p>
+    <button onclick="funcao()"> Clique aqui </button>
+    <p id="demo"></p>
+</body>
+</html>
